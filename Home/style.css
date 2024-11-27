@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: #1f242d;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.home .home-info h2 span{
+    font-family: 'Protest Revolution',sans-serif;
+    padding-left: 5px;
+    box-shadow: 2px orange;
+}
+
+.navbar .logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    box-shadow: 10px white;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navbar ul li:hover a,
+.navbar ul li.active a {
+    color: rgba(253, 9, 9, 0.884);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px  9%  0;
+    color: white;
+}
+
+.home-info h1{
+    font-size: 55px;
+    color: red;
+}
+
+.home-info h2{
+    font-size: 32px;
+    margin-top: -10px;
+}
+
+.home-info p{
+    font-size: 16px;
+    margin: 10px 0 25px;
+
+}
+
+.home-info .btn-sci{
+    display: flex;
+    align-items: center;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background:  red;
+    border: 1px solid red;
+    border-radius: 30px;
+    box-shadow: 0 0 5px red;
+    font-size: 16px;
+    color: black;
+    font-weight: 700;
+    transition: .5s;
+}
+
+.btn:hover{
+    background: transparent;
+    color: red;
+    box-shadow: none;
+}
+
+.home-info .btn-sci .sci {
+    margin-left: 20px;
+}
+
+.home-info .btn-sci .sci a {
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid red;
+    border-radius: 50%;
+    font-size: 16x;
+    color: red;
+    margin: 0 8px;
+    transition: .5s
+    ;
+}
+
+.home-info .btn-sci .sci a:hover{
+    background: red;
+    color: black;
+    box-shadow: 0 0 10px red;
+}
+
+.home-img .img-box{
+    width: 28vw;
+    margin-left: 60px;
+    height: 28vw;
+    background: orange;
+    border-radius: 50%;
+    box-shadow: 0 0 15px orange;
+    padding: 5px;
+}
+
+
+.home-img .img-box .img-item{ 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: red;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.home-img .img-box .img-item img{
+    position: absolute;
+    top: 10px;
+    bottom: 30px;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
